@@ -17,24 +17,24 @@ EXPOSE : Mendefenisikan port yang digunakan
 
 CMD : Eksekusi perintah command pada lingkungan container
 
-##build images
+**build images**
 ![sudo%20docker%20build.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/sudo%20docker%20build.png)
 ```
 sudo docker build -t nginx-erwinrobbip:v2 .
 ```
 perintah sudo digunakan untuk akses ke root kemudian dilanjutkan dengan docker build. -t menunjukan tag list dan diikuti nama image yang kita inginkan. v2 terakhir menunjukan versi dari image yg kita bangun. Kemudian ada tanda . yang diartikan all file in folder.
 
-##jalankan image yang kita bangun
+**jalankan image yang kita bangun**
 ![uocker%20run%20-d%20-p.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/docker%20run%20-d%20-p.png)
 perintah diatas docker menjalankan -d diartikan sebagai menjalankan container dalam background dan mencetak ID container kemudian dilanjutkan -p yakni port yang digunakan kemudinan images yang akan dijalankan
 
-##cek images
+**cek images**
 ![uocker%20run%20-d%20-p.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/docker%20run%20-d%20-p.png)
 ```
 sudo docker images
 ```
 
-##cek container
+**cek container**
 ![Screenshot%20from%202017-07-26%2022-06-01.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/Screenshot%20from%202017-07-26%2022-06-01.png)
 container ID tercipta setelah kita run images. disebelah juga tertulis images nginx-erwinrobbip:v2 sesuai image yang kita bangun
 
