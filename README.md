@@ -29,11 +29,13 @@ perintah sudo digunakan untuk akses ke root kemudian dilanjutkan dengan docker b
 perintah diatas docker menjalankan -d diartikan sebagai menjalankan container dalam background dan mencetak ID container kemudian dilanjutkan -p yakni port yang digunakan kemudinan images yang akan dijalankan
 
 **cek images**
+Untuk melihat images ada dalam docker 
 ![docker_images](https://github.com/erwinrobbip/responsitccl/blob/master/img/docker_images.png)
 ```
 sudo docker images
 ```
-Untuk melihat images ada dalam docker 
+
+
 **cek container**
 ![Screenshot%20from%202017-07-26%2022-06-01.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/Screenshot%20from%202017-07-26%2022-06-01.png)
 container ID tercipta setelah kita run images. disebelah juga tertulis images nginx-erwinrobbip:v2 sesuai image yang kita bangun
