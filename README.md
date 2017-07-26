@@ -3,14 +3,18 @@ Dalam responsi ini saya membuat program HTML tentang web_event_seminar. Kemudian
 ![hasil.PNG](https://github.com/erwinrobbip/responsitccl/blob/master/img/hasil.png)
 
 Menggunakan OS alpine dan menggunakan service nginx. Berikut isi file Dockerfile
-```FROM nginx:alpine
+```
+FROM nginx:alpine
 COPY . /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 FROM : mendefenisikan base image Docker yang digunakan, dalam contoh ini menggunakan nginx:alpine
+
 COPY melakukan proses duplikasi file index.html pada direktori imageku ke dalam root direktori nginx di dalam container
+
 EXPOSE : Mendefenisikan port yang digunakan
+
 CMD : Eksekusi perintah command pada lingkungan container
 
 
