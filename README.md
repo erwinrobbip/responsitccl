@@ -11,7 +11,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 FROM : mendefenisikan base image Docker yang digunakan, dalam contoh ini menggunakan nginx:alpine
 
-COPY melakukan proses duplikasi semua file yang ditandai titik(.) pada direktori imageku ke dalam root direktori html nginx di dalam container
+COPY melakukan proses duplikasi semua file yang ditandai titik(.) pada direktori responsi ke dalam root direktori html nginx di dalam container
 
 EXPOSE : Mendefenisikan port yang digunakan
 
@@ -41,6 +41,5 @@ container ID tercipta setelah kita run images. disebelah juga tertulis images ng
 
 
 **Prestasi:**
- 1. Github Star Project 25 star: https://github.com/suhindra/CodeIgniter-Instagram-API
- 2. Github Contribution(CodeIgniter): https://github.com/bcit-ci/CodeIgniter/pulls?q=is%3Apr+author%3Asuhindra+is%3Aclosed
- 3. Collabolator: https://github.com/codeigniter-id/awesome-codeigniter, https://github.com/enlivenapp/Open-Blog-3
+ 1. Github Star Project : https://github.com/erwinrobbip/captiveportal_mikrotik
+ 2. Collabolator: https://github.com/amanuDigm/kolaborasi-tccl
