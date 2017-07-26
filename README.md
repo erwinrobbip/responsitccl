@@ -11,31 +11,36 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 FROM : mendefenisikan base image Docker yang digunakan, dalam contoh ini menggunakan nginx:alpine
 
-COPY melakukan proses duplikasi file index.html pada direktori imageku ke dalam root direktori nginx di dalam container
+COPY melakukan proses duplikasi semua file yang ditandai titik(.) pada direktori imageku ke dalam root direktori html nginx di dalam container
 
 EXPOSE : Mendefenisikan port yang digunakan
 
 CMD : Eksekusi perintah command pada lingkungan container
 
+##build images
+![sudo%20docker%20build.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/sudo%20docker%20build.png)
+```
+sudo docker build -t nginx-erwinrobbip:v2 .
+```
+perintah sudo digunakan untuk akses ke root kemudian dilanjutkan dengan docker build. -t menunjukan tag list dan diikuti nama image yang kita inginkan. v2 terakhir menunjukan versi dari image yg kita bangun. Kemudian ada tanda . yang diartikan all file in folder.
+
+##jalankan image yang kita bangun
+![uocker%20run%20-d%20-p.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/docker%20run%20-d%20-p.png)
+perintah diatas docker menjalankan -d diartikan sebagai menjalankan container dalam background dan mencetak ID container kemudian dilanjutkan -p yakni port yang digunakan kemudinan images yang akan dijalankan
+
+##cek images
+![uocker%20run%20-d%20-p.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/docker%20run%20-d%20-p.png)
+```
+sudo docker images
+```
+
+##cek container
+![Screenshot%20from%202017-07-26%2022-06-01.png](https://github.com/erwinrobbip/responsitccl/blob/master/img/Screenshot%20from%202017-07-26%2022-06-01.png)
+container ID tercipta setelah kita run images. disebelah juga tertulis images nginx-erwinrobbip:v2 sesuai image yang kita bangun
 
 
-untuk responsi tccl nanti malam:
-1. buat aplikasi web yang menampilkan tampilan HTML bebas. devel tools bebas, boleh php, nodejs, java, dll.
-2. buat Dockerfile untuk membuat image app web tsb
-3. push no 1 dan 2 ke repo github anda, beri nama repo anda: "responsitccl".
-4. jelaskan apa yg sudah anda kerjakan tsb dlm file README.md. File ini jg hrs masuk ke repo.
-5. tuliskan karya serta prestasi anda di readme tsb (trmsk github project dgn star > 25, kontrib proyek open source, dll).
-6. setelah selesai, kirim nama, nim, username github ke grup ini. 
 
-
-
-oke
-
-blablalba
-]asdf
-ds
-f
-adsf 
-d
-fd
-![unifi1.PNG](https://github.com/erwinrobbip/responsitccl/blob/master/unifi1.PNG)
+**Prestasi:**
+ 1. Github Star Project 25 star: https://github.com/suhindra/CodeIgniter-Instagram-API
+ 2. Github Contribution(CodeIgniter): https://github.com/bcit-ci/CodeIgniter/pulls?q=is%3Apr+author%3Asuhindra+is%3Aclosed
+ 3. Collabolator: https://github.com/codeigniter-id/awesome-codeigniter, https://github.com/enlivenapp/Open-Blog-3
